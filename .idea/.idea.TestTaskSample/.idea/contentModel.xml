@@ -706,7 +706,6 @@
           <e p="Main.cs" t="Include" />
           <e p="Model" t="Include">
             <e p="GameConfig.cs" t="Include" />
-            <e p="IPersistent.cs" t="Include" />
             <e p="PersistentModel.cs" t="Include" />
             <e p="User.cs" t="Include" />
           </e>

@@ -5,7 +5,7 @@ using Zenject;
 
 namespace Model
 {
-    public abstract class PersistentModel<T> : IPersistent<T> where T : LoadData
+    public abstract class PersistentModel<T> where T : LoadData
     {
         [Inject] private LoadDataCommand.Factory _loadDataCommandFactory;
 

@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="490d3bf3-fc44-47b6-ab40-2868eb324bb2" name="Default Changelist" comment="" />
+    <list default="true" id="490d3bf3-fc44-47b6-ab40-2868eb324bb2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestTaskSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestTaskSample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/IPersistent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/IPersistent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/PersistentModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/PersistentModel.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83FB2797-B55E-4383-AAE9-E15220A067E6/7f/a6d39c77/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
@@ -29,8 +46,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Storage/IStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Storage/RemoteGameStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Commands/LoadDataCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Model/PersistentModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Storage/LocalJSONStorage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/PersistentModel.cs" />
       </list>
     </option>
   </component>
@@ -59,10 +76,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="35445">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="35445" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -79,13 +96,35 @@
       <updated>1607249726147</updated>
       <workItem from="1607249734147" duration="19937000" />
       <workItem from="1607271714858" duration="4358000" />
+      <workItem from="1607287635806" duration="325000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1607287838240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607287838240</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
     <state width="780" height="464" key="DebuggerActiveHint" timestamp="1607287244676">
@@ -160,6 +199,14 @@
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state x="655" y="243" key="RiderGenerateDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1607274632159" />
+    <state x="131" y="29" width="1109" height="771" key="Vcs.Push.Dialog.v2" timestamp="1607287847417">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="131" y="29" width="1109" height="771" key="Vcs.Push.Dialog.v2/0.25.1680.1025@0.25.1680.1025" timestamp="1607287847417" />
+    <state x="564" y="276" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1607287825363">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="564" y="276" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1607287825363" />
     <state x="503" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1607271189366">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
