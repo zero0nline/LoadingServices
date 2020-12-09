@@ -691,8 +691,12 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Commands" t="Include">
+            <e p="AbstractLoadDataCommand.cs" t="Include" />
             <e p="ICommand.cs" t="Include" />
-            <e p="LoadDataCommand.cs" t="Include" />
+            <e p="ILoadDataCommand.cs" t="Include" />
+            <e p="LoadDataFactory.cs" t="Include" />
+            <e p="LoadLocalDataCommand.cs" t="Include" />
+            <e p="LoadRemoteDataCommand.cs" t="Include" />
             <e p="SaveDataCommand.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
@@ -711,8 +715,9 @@
           </e>
           <e p="Storage" t="Include">
             <e p="IStorage.cs" t="Include" />
-            <e p="LocalJSONStorage.cs" t="Include" />
-            <e p="RemoteGameStorage.cs" t="Include" />
+            <e p="LocalStorage.cs" t="Include" />
+            <e p="RemoteStorage.cs" t="Include" />
+            <e p="StorageType.cs" t="Include" />
           </e>
         </e>
       </e>

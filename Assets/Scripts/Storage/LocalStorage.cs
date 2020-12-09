@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Storage
 {
-    public class LocalJSONStorage : IStorage
+    public class LocalStorage : IStorage
     {
         public IObservable<bool> Load<T>(T model) where T : LoadData
         {

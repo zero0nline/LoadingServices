@@ -3,7 +3,7 @@ using Data;
 
 namespace Storage
 {
-    public class RemoteGameStorage : IStorage
+    public class RemoteStorage : IStorage
     {
         public IObservable<bool> Load<T>(T model) where T : LoadData
         {

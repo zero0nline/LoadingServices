@@ -1,5 +1,3 @@
-using Newtonsoft.Json;
-
 namespace Data
 {
     public abstract class LoadData

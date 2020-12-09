@@ -7,7 +7,7 @@ namespace Model
 {
     public abstract class PersistentModel<T> where T : LoadData
     {
-        [Inject] private LoadDataCommand.Factory _loadDataCommandFactory;
+        [Inject] private LoadDataFactory _loadDataCommandFactory;
 
         [Inject] public T Model { get; }
 
