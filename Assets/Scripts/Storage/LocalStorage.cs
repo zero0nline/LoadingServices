@@ -15,6 +15,7 @@ namespace Storage
                 var dataKeyName = model.KeyName;
                 try
                 {
+                    //set default value for first run
                     if (!PlayerPrefs.HasKey(dataKeyName))
                     {
                         PlayerPrefs.SetString(dataKeyName,
