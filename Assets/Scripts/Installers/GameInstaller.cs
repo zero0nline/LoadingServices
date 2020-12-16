@@ -1,5 +1,7 @@
 using Data;
 using Model;
+using UI.Presenters;
+using UI.Views;
 using UnityEngine;
 using Zenject;
 
@@ -8,10 +10,14 @@ public class GameInstaller : ScriptableObjectInstaller<GameInstaller>
 {
     public override void InstallBindings()
     {
+        Container.Bind<Canvas>().FromComponentInHierarchy(false).AsSingle();
+        
         Container.Bind<User>().AsSingle();
-        Container.Bind<UserData>().AsTransient();
+        Container.Bind<UserData>().AsSingle();
 
         Container.Bind<GameConfig>().AsSingle();
-        Container.Bind<GameData>().AsTransient();
+        Container.Bind<GameData>().AsSingle();
+
+        Container.Bind<GameConfigPresenter>().AsTransient();
     }
 }

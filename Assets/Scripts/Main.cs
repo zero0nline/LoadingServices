@@ -1,35 +1,14 @@
-﻿using Model;
-using UniRx;
+﻿using UI.Presenters;
 using UnityEngine;
 using Zenject;
 
 public class Main : MonoBehaviour
 {
-    [Inject] private User _user;
-    [Inject] private GameConfig _gameConfig;
-
+    //[Inject] private UserPresenter _userPresenter;
+    [Inject] private GameConfigPresenter _gameConfigPresenter;
     private void Start()
     {
-        _user.Load().Subscribe(OnUserLoad);
-        _gameConfig.Load().Subscribe(OnGameConfigsLoad);
-    }
-
-    private void OnUserLoad(bool result)
-    {
-        if (result)
-        {
-            var userData = _user.Model;
-        }
-        else
-        {
-        }
-    }
-
-    private void OnGameConfigsLoad(bool result)
-    {
-        if (result)
-        {
-            var gameData = _gameConfig.Model;
-        }
+        //_userPresenter.Show();
+        _gameConfigPresenter.Show();
     }
 }

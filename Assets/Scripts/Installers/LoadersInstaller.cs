@@ -10,6 +10,8 @@ public class LoadersInstaller : ScriptableObjectInstaller<LoadersInstaller>
     {
         //Inject loaders for models
         Container.Bind<IStorage>().To<LocalStorage>().WhenInjectedInto<User>();
-        Container.Bind<IStorage>().To<RemoteStorage>().WhenInjectedInto<GameConfig>();
+        Container.Bind<IStorage>().To<LocalStorage>().WhenInjectedInto<GameConfig>();
+        //Example how to bind to another storage
+        //Container.Bind<IStorage>().To<RemoteStorage>().WhenInjectedInto<GameConfig>();
     }
 }

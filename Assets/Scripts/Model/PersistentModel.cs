@@ -10,10 +10,9 @@ namespace Model
         [Inject] private IStorage _storage;
         [Inject] public T Model { get; }
         
-        public IObservable<T> Save()
+        public IObservable<bool> Save()
         {
-            //TODO:
-            return null;
+            return _storage.Save(Model);
         }
 
         public IObservable<bool> Load()
