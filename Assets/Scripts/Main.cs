@@ -4,11 +4,12 @@ using Zenject;
 
 public class Main : MonoBehaviour
 {
-    //[Inject] private UserPresenter _userPresenter;
+    [Inject] private UserPresenter _userPresenter;
     [Inject] private GameConfigPresenter _gameConfigPresenter;
+
     private void Start()
     {
-        //_userPresenter.Show();
+        _userPresenter.Show();
         _gameConfigPresenter.Show();
     }
 }

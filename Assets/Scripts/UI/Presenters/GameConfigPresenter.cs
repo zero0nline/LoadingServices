@@ -2,16 +2,15 @@ using Model;
 using UI.Views;
 using UniRx;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 using Zenject;
 
 namespace UI.Presenters
 {
-    public class GameConfigPresenter : Presenter
+    public class GameConfigPresenter : Presenter<GameConfigView>
     {
         [Inject] private GameConfig _gameConfig;
-        private GameConfigView _view;
-        
+        protected override string ViewPrefabPath => "Assets/Prefabs/Views/GameConfigView.prefab";
+
         public override void Show()
         {
             base.Show();
@@ -23,24 +22,12 @@ namespace UI.Presenters
         {
             if (result)
             {
-                LoadView();
+                LoadView().Completed += handle => { View.SetData(_gameConfig.Model); };
             }
             else
             {
                 Debug.LogError($"Error on loading GameConfig");
             }
-        }
-
-        private void LoadView()
-        {
-            Addressables.LoadAssetAsync<GameObject>("Assets/Prefabs/Views/GameConfigView.prefab").Completed += handle =>
-            {
-                if (handle.IsDone)
-                {
-                    _view = Object.Instantiate(handle.Result, Canvas.transform).GetComponent<GameConfigView>();
-                    _view.SetData(_gameConfig.Model);
-                }
-            };
         }
     }
 }

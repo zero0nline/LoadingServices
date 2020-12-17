@@ -1,7 +1,6 @@
 using Data;
 using Model;
 using UI.Presenters;
-using UI.Views;
 using UnityEngine;
 using Zenject;
 
@@ -19,5 +18,6 @@ public class GameInstaller : ScriptableObjectInstaller<GameInstaller>
         Container.Bind<GameData>().AsSingle();
 
         Container.Bind<GameConfigPresenter>().AsTransient();
+        Container.Bind<UserPresenter>().AsTransient();
     }
 }
