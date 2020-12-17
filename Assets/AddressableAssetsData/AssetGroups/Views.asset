@@ -21,10 +21,14 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/Views/GameConfigView.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 1141185086345563648, guid: 216c1678073b348a28bd728bdcac5b75,
-      type: 3}
-    m_TargetAsset: {fileID: 1141185086345563648, guid: 216c1678073b348a28bd728bdcac5b75,
-      type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7a85f00315d3f4a7182c2b518dda7643
+    m_Address: Assets/Prefabs/Views/UserView.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 41a4f1474e1384ee4b3ca133b1dc9dd7, type: 2}
   m_SchemaSet:

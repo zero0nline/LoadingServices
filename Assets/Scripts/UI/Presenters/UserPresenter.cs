@@ -2,16 +2,21 @@ using Model;
 using UI.Views;
 using UniRx;
 using UnityEngine;
-using Zenject;
 
 namespace UI.Presenters
 {
     public class UserPresenter : Presenter<UserView>
     {
-        [Inject] private User _user;
+        private readonly User _user;
 
         protected override string ViewPrefabPath => "Assets/Prefabs/Views/UserView.prefab";
 
+        public UserPresenter(User user)
+        {
+            _user = user;
+            _user.ModelSaved += OnModelSaved;
+        }
+        
         public override void Show()
         {
             base.Show();
@@ -23,12 +28,32 @@ namespace UI.Presenters
         {
             if (result)
             {
-                LoadView().Completed += handle => { View.SetData(_user.Model); };
+                LoadView().Completed += handle =>
+                {
+                    View.SetData(_user.Model);
+                    View.AddCoinsBtn.onClick.AddListener(OnAddCoinsBtnClick);
+                    View.IncreaseLevelBtn.onClick.AddListener(OnIncreaseLevelBtnClick);
+                };
             }
             else
             {
                 Debug.LogError($"Error on loading User");
             }
+        }
+        
+        private void OnModelSaved()
+        {
+            View.SetData(_user.Model);
+        }
+
+        private void OnAddCoinsBtnClick()
+        {
+            _user.AddCoins(100);
+        }
+
+        private void OnIncreaseLevelBtnClick()
+        {
+            _user.IncreaseLevel();
         }
     }
 }
